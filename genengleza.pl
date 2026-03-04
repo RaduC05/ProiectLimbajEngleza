@@ -17,6 +17,8 @@ adj --> [small].
 adj --> [happy].
 adj --> [green].
 adj --> [fast].
+adj --> [beautifull].
+adj --> [fast].
 
 noun(sg) --> [boy].
 noun(sg) --> [cat].
@@ -42,4 +44,5 @@ genereaza(P) :- phrase(sentence, P).
 
 genereaza_random(P) :- 
     findall(L, phrase(sentence, L), Toate),
+
     random_member(P, Toate).
